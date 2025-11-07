@@ -1,3 +1,4 @@
+
 var tl = gsap.timeline();
 
 tl.from(".nav-links li", {
@@ -196,7 +197,6 @@ tl.from(".contactpage .icons", {
     scrub: 4,
   }
 
-  
 });
 
 let card1 = document.querySelector("#card1");
@@ -208,6 +208,9 @@ let github = document.querySelector("#github");
 let instagram = document.querySelector("#instagram");
 let phone = document.querySelector("#phone");
 let Email = document.querySelector("#Email");
+let emailInput = document.querySelector("#email");
+let nameInput = document.querySelector("#name");
+let messageInput = document.querySelector("#message");
 
 card1.addEventListener("click", function () {
   window.location.href = "https://github.com/sandeep1247/mordengallray";
@@ -247,15 +250,29 @@ const menu = document.querySelector("#menu");
   menu.addEventListener("click", () => {
     navLinks.classList.toggle("active");
   });
-// gsap.to("#page2 img", {
-//   width: "50%",
-//   scrollTrigger: {
-//     trigger: "#page2",
-//     scroller: "body",
-//     // markers:true,
-//     start: "top 0",
-//     end: "top -100%",
-//     scrub: 2,
-//     pin: true,
-//   },
-// });
+
+emailjs.init("e5ASsK2pAd_sQ48ej")
+document.querySelector("#contact-form")?.addEventListener("submit", (e) => {
+  e.preventDefault();
+  // console.log(document.getElementById("name").value);
+emailjs.send("Sandy_123","template_ahnxne9",{
+title: "Hello",
+name: nameInput.value,
+time: new Date().toLocaleDateString() + " " + (new Date()).toLocaleTimeString(),
+message:  messageInput.value,
+email:emailInput.value,
+}).then((res)=>{
+    alert("Message sent successfully!");
+    nameInput.value="";
+    emailInput.value="";
+    messageInput.value="";
+}); 
+});
+
+
+
+
+
+
+
+

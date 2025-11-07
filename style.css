@@ -694,6 +694,12 @@ footer {
   .main-content .main-text {
     font-size: 1.2rem;
   }
+  .main-image img {
+    width: 100%;
+    height: auto;
+    left: 10%;
+    top: 56%;
+  }
 
   #page2 h1 {
     font-size: 28px;
@@ -768,6 +774,11 @@ footer {
     margin: auto;
     width: 90px;
     padding: 5px;
+  }
+   #skills .image img:nth-last-child(1){
+    width: 100px;
+    height: 80px;
+    background-color: rgb(247, 6, 90);
   }
   #page4 h1 {
     font-size: 36px;

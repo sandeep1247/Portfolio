@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -25,7 +26,7 @@
         <div class="main-text-image">
         <div class="main-text">
             <h1 >Welcome to My Developer Portfolio</h1>
-            <p>Hi, I’m <span>Sandeep Gupta</span> – a passionate Web Developer who loves turning ideas into reality through code. I create modern, responsive, and interactive websites using HTML, CSS, JavaScript, and React. My aim is simple: to build digital experiences that are fast, functional, and fun to use.</p>
+            <p>Hi, I’m <span>Sandeep Gupta</span> – a passionate Full Stack Web Developer who loves turning ideas into reality through code. I build modern, scalable, and high-performing web applications using technologies like HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB.</p>
           
         </div>
         <div class="main-image" >
@@ -92,6 +93,9 @@ Built responsive modules (Java, Spring Boot, HTML, CSS, JS, Bootstrap) improving
             <img src="/icons/pngegg (7).png" alt="">
              <img src="/icons/pngegg (8).png" alt="">
               <img src="/icons/pngegg (9).png" alt="">
+              <img src="/icons/pngegg (10).png" alt="">
+              <img src="/icons/pngegg (11).png" alt="">
+              <img src="/icons/express-js.png" alt="">
        </div>
     </div>
     <div id="page4">
@@ -99,12 +103,12 @@ Built responsive modules (Java, Spring Boot, HTML, CSS, JS, Bootstrap) improving
                 <h1>Reach Out to me</h1>
             <p class="text">If you have any questions or would like to get in touch, feel free to reach out!</p>
              <div class="contactpage"> 
-              <form action="">
+              <form id="contact-form" >
                 <div class="form-group">
                     <label>Name:</label>
                     <input type="text" id="name" placeholder="Enter your name" required>
                      <label>Email:</label>
-                    <input type="text" id="name"placeholder="Enter your email">
+                    <input type="text" id="email" placeholder="Enter your email">
                     <label>Message:</label>
                     <textarea id="message" placeholder="Message" rows="4"></textarea>
                      <button type="submit">Send Message</button>
